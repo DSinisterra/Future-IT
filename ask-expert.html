@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future IT - Ask the Expert</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="./images/logo.png" alt="Future IT logo" id="logo">
+      <div class="slogan">People. Productivity. Profitability.</div>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="blogs.html" class="nav-link">Blogs</a>
+      <a href="ask-expert.html" class="nav-link">Ask the Expert</a>
+      <a href="sitemap.html" class="nav-link">Site Map</a>
+      <a href="contact-us.html" class="nav-link">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="page-wrap container">
+  <main class="container">
+    <h1>Ask the Expert</h1>
+    <p>
+      Register below to access our exclusive “Ask the Expert” section where you can submit
+      questions to our consultants on time management, productivity, work-life balance,
+      and career planning.
+    </p>
+
+    <form id="registerForm" method="post" action="#">
+      <label>Username* 
+        <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+      </label>
+
+      <label>Email* 
+        <input type="email" id="email" name="email" required>
+      </label>
+
+      <label>Password* 
+        <input type="password" id="password" name="password" required>
+      </label>
+
+      <label>Confirm Password* 
+        <input type="password" id="confirm_password" name="confirm_password" required>
+      </label>
+
+      <label>First Name* 
+        <input type="text" id="first_name" name="first_name" required minlength="2">
+      </label>
+
+      <label>Last Name* 
+        <input type="text" id="last_name" name="last_name" required minlength="2">
+      </label>
+
+      <label>Gender* 
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Street Address* 
+        <input type="text" id="street" name="street" required>
+      </label>
+
+      <label>Suburb* 
+        <input type="text" id="suburb" name="suburb" required>
+      </label>
+
+      <label>Postcode* 
+        <input type="text" id="postcode" name="postcode" required pattern="\\d{4}">
+      </label>
+
+      <label>State* 
+        <input type="text" id="state" name="state" required>
+      </label>
+
+      <label>Phone Number* 
+        <input type="text" id="phone" name="phone" required pattern="\\d{8,15}">
+      </label>
+
+      <div class="form-actions">
+        <button type="reset" onmouseover="btnHover(this)" onmouseout="btnOut(this)">Reset</button>
+        <button type="submit" onmouseover="btnHover(this)" onmouseout="btnOut(this)">Register</button>
+      </div>
+    </form>
+  </main>
+
+  <aside class="aside">
+    <h2>Why Register?</h2>
+    <p>
+      Members gain access to personalised advice from industry experts,
+      downloadable resources, and regular webinars focused on productivity
+      and success strategies.
+    </p>
+  </aside>
+  </div>
+  <footer class="site-footer">
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Future IT</p>
+  </footer>
+</body>
+</html>

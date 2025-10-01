@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — Future IT</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="./images/logo.png" alt="Future IT logo" id="logo">
+      <div class="slogan">People. Productivity. Profitability.</div>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="blogs.html" class="nav-link">Blogs</a>
+      <a href="ask-expert.html" class="nav-link">Ask the Expert</a>
+      <a href="sitemap.html" class="nav-link">Site Map</a>
+      <a href="contact-us.html" class="nav-link active">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="page-wrap container">
+    <main class="main-content">
+      <h1>Contact Us</h1>
+      <p>If you have questions or would like to arrange a consultation, please email us or use the contact form below.</p>
+
+      <form id="contactForm" method="post" action="#" onsubmit="return validateContact()">
+        <label>Name* <input type="text" id="cname" required minlength="2"></label>
+        <label>Email* <input type="email" id="cemail" required></label>
+        <label>Message* <textarea id="cmessage" required minlength="20"></textarea></label>
+
+        <div class="form-actions">
+          <button type="reset" class="hoverable">Reset</button>
+          <button type="submit" class="hoverable">Send</button>
+        </div>
+      </form>
+    </main>
+
+    <aside class="aside">
+      <div class="aside-box">
+        <h3>Contact Details</h3>
+        <p>Email: info@futureit.example<br>Phone: (02) 1234 5678</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Future IT</p>
+  </footer>
+</body>
+</html>
